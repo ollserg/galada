@@ -1,10 +1,10 @@
-Galada - Easy & Simple Theme for Personal Blog
+Galada - Легкая и Простая тема для личного блога
 ======
-Galada is an easy and simple theme for Jekyll. Dark colors, give it a special exquisite look. A careful approach to design and features make it an ideal solution for a personal blog.
+Galada — легкая и простая тема для Jekyll. Темные цвета, придают ему особый изысканный вид. Тщательный подход к дизайну и возможностям делает его идеальным решением для личного блога.
 
 * * *
 
-Table of Contents
+Оглавление
 -----------------
 *   [Features](#features)
 *   [Demo](#demo)
@@ -21,26 +21,25 @@ Table of Contents
 
 ### Features
 
-* 100% responsive and clean theme
+* 100% отзывчивая и чистая тема
 
-* Optimized for mobile devices
+* Оптимизирован для мобильных устройств
 
-* Minimal design
+* Минималистичный дизайн
 
-* Valid HTML5 code
+* Действительный код HTML5
 
-* Post sharing
+* Обмен сообщениями
 
-* Subscription form
+* Форма подписки
 
-* Supports Disqus Comments
+* Поддерживает комментарии Disqus
 
-* Instagram Feed
+* Лента Instagram
 
-* Ionicons Icons
+* Иконки Ионикон
 
-* Google Fonts
-
+* Гугл шрифты
 
 * * *
 
@@ -58,15 +57,15 @@ The post page would look like this:
 
 ### Deployment
 
-To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
+Чтобы запустить тему локально, перейдите в каталог темы и запустите «bundle install», чтобы установить зависимости, затем запустите «jekyll serve» или «bundle exec jekyll serve», чтобы запустить сервер Jekyll.
 
-I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
+Я бы рекомендовал проверить страницу [Методы развертывания] (https://jekyllrb.com/docs/deployment-methods/) на веб-сайте Jekyll.
 
 * * *
 
 ### Posts
 
-To create a new post, you can create a new markdown file inside the \_posts directory by following the [recommended file structure](https://jekyllrb.com/docs/posts/#creating-post-files).
+Чтобы создать новый пост, вы можете создать новый файл уценки в каталоге \_posts, следуя [рекомендуемой файловой структуре](https://jekyllrb.com/docs/posts/#creating-post-files).
 
       ---
       layout: post
@@ -77,78 +76,73 @@ To create a new post, you can create a new markdown file inside the \_posts dire
       ---
           
 
-You can set the tags and the post image.
+Вы можете установить теги и изображение поста.
 
-Add post images to **/img/** directory.
+Добавьте изображения постов в каталог **/img/**.
 
-For tags, try to not add space between two words, for example, `Ruby on Rails`, could be something like (`ruby-on-rails`, `Ruby_on_Rails`, or `Ruby-on-Rails`).
-
+Для тегов старайтесь не добавлять пробел между двумя словами, например, «Ruby on Rails», может быть что-то вроде ( «ruby-on-rails», «Ruby_on_Rails» или «Ruby-on-Rails»).
 * * *
 
 ### Disqus Comments
 
-Galada Theme comes with Disqus comments enabled.
+Тема Galada поставляется с включенными комментариями Disqus.
 
-Open `_config.yml` file, and change the `mr-brown` value on line 26 with your [Disqus account shortname](https://help.disqus.com/customer/portal/articles/466208).
+Откройте файл _config.yml и измените значение mr-brown в строке 26 на свое [короткое имя учетной записи Disqus] (https://help.disqus.com/customer/portal/articles/466208).
 
-      Comment Section (Disqus)
-      disqus-identifier: mr-brown \# Add your shortname for Disqus Comment. For example mr-brown
+       Раздел комментариев (Disqus)
+       disqus-identifier: mr-brown \# Добавьте свое короткое имя для комментария Disqus. Например, мистер Браун
           
 
-That’s all you need to setup Disqus from the theme side. If you get any issue regarding that comments are unable to load. First, make sure you have [registered your website with Disqus (Step 1)](https://help.disqus.com/customer/portal/articles/466182-publisher-quick-start-guide).
+Это все, что вам нужно для настройки Disqus со стороны темы. Если у вас возникнут какие-либо проблемы, связанные с этим, комментарии не могут быть загружены. Во-первых, убедитесь, что вы [зарегистрировали свой веб-сайт в Disqus (шаг 1)](https://help.disqus.com/customer/portal/articles/466182-publisher-quick-start-guide).
 
-And also check [Disqus troubleshooting guide](https://help.disqus.com/customer/portal/articles/472007-i-m-receiving-the-message-%22we-were-unable-to-load-disqus-%22) if you still have issues.
-
+А также проверьте [Руководство по устранению неполадок Disqus](https://help.disqus.com/customer/portal/articles/472007-i-m-receive-the-message-%22we-were-unable-to-load-disqus-%22 ), если у вас все еще есть проблемы.
 * * *
 
 ### Instagram
+Канал Instagram работает с использованием [Instafeed.js](http://instafeedjs.com/) для показа фотографий.
 
-The Instagram feed is working using [Instafeed.js](http://instafeedjs.com/) to show the photos.
+Во-первых, вам нужно будет получить `userId` и `accessToken` вашей учетной записи со следующих URL-адресов:
 
-First, you will need to get your account `userId` and `accessToken` from the following URLs:
+* идентификатор пользователя: [smashballoon.com/instagram-feed/find-instagram-user-id](https://smashballoon.com/instagram-feed/find-instagram-user-id/)
+* accessToken: [instagram.pixelunion.net](http://instagram.pixelunion.net/)
 
-*   userId: [smashballoon.com/instagram-feed/find-instagram-user-id](https://smashballoon.com/instagram-feed/find-instagram-user-id/)
-*   accessToken: [instagram.pixelunion.net](http://instagram.pixelunion.net/)
+Во-вторых, откройте файл js/common.js и замените значения userId и accessToken.
 
-Second, open the `js/common.js` file and replace the `userId` and `accessToken` values.
-
-            var instagramFeed = new Instafeed({
-              get: 'user',
-              limit: 6,
-              resolution: 'standard_resolution',
-              userId: '8987997106',
+            var instagramFeed = новый Instafeed({
+              получить: 'пользователь',
+              лимит: 6,
+              разрешение: 'стандартное_разрешение',
+              идентификатор пользователя: '8987997106',
               accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
-              template: ''
+              шаблон: ''
             });
           
 
-Third, open the `_config.yml` file and replace the `instafeed: false` on `instafeed: true` value.
+В-третьих, откройте файл _config.yml и замените значение instafeed: false на instafeed: true.
 
-            \# Instagram Feed
-            instafeed: false \# To enable the instafeed, use the value true. To turn off use the value false.
-          
+            \# Лента Instagram
+            instafeed: false \# Чтобы включить instafeed, используйте значение true. Для выключения используйте значение false.
 
 * * *
 
 ### Google Analytics
 
-To integrate Google Analytics, open `_config.yml`, and add your Google Analytics identifier.
+Чтобы интегрировать Google Analytics, откройте файл _config.yml и добавьте свой идентификатор Google Analytics.
 
-    \# Google Analytics
-    google-analytics: \# Add your identifier. For example UA-99631805-1
-          
+     \# Гугл Аналитика
+     google-analytics: \# Добавьте свой идентификатор. Например UA-99631805-1
 
 * * *
 
 ### Update favicon
 
-You can find the current favicon (favicon.ico) inside the theme root directory, just replace it with your new favicon.
+Вы можете найти текущий значок (favicon.ico) в корневом каталоге темы, просто замените его новым значком.
 
 * * *
 
 ### Credits
 
-I have used the following scripts, fonts or other files as listed.
+Я использовал следующие сценарии, шрифты или другие файлы, указанные в списке.
 
 *   [Google Fonts](https://fonts.google.com/specimen/Nunito) (Nunito, Sans Serif).
 *   [Ionicons Icons](https://ionicons.com/)
