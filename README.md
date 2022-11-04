@@ -108,13 +108,13 @@ The post page would look like this:
 
 Во-вторых, откройте файл js/common.js и замените значения userId и accessToken.
 
-            var instagramFeed = новый Instafeed({
-              получить: 'пользователь',
-              лимит: 6,
-              разрешение: 'стандартное_разрешение',
-              идентификатор пользователя: '8987997106',
+            var instagramFeed = new Instafeed({
+              get: 'user',
+              limit: 6,
+              resolution: 'standard_resolution',
+              userId: '8987997106',
               accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
-              шаблон: ''
+              template: ''
             });
           
 
